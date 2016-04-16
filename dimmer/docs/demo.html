@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html ng-app="dimmerApp">
+<head>
+  <meta charset="utf-8" />
+  <title>Semantic UI + Angular.JS</title>
+  <link href="../../src/semantic.css" rel="stylesheet" /> 
+</head>
+<body ng-controller="RootCtrl">
+    
+      <ui-page-dimmer ng-model="show_dimmer" >Hello<button value="a">a</button></ui-page-dimmer>
+    
+
+    <div class="ui button" ng-click="dimmer()">
+      Open dimmer
+    </div>
+
+  <script src="../../src/angular.js" type="text/javascript"></script>
+
+    <script src="../dimmer.js" type="text/javascript"></script>
+    <script src="controllers.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html ng-app="dropdownApp">
+<head>
+  <meta charset="utf-8" />
+  <title>Semantic UI + Angular.JS</title>
+  <link href="../../src/semantic.css" rel="stylesheet" /> 
+
+</head>
+<body ng-controller="RootCtrl">
+    <h2>Basic</h2>
+
+    <ui-dropdown-meau ex-placeholder="my dropdown">
+      <ui-dropdown><i class="af flag"></i>item1</ui-dropdown>
+      <ui-dropdown>item2</ui-dropdown>
+      <ui-dropdown>item3</ui-dropdown>
+      <ui-dropdown>item4</ui-dropdown>
+      <ui-dropdown>item5</ui-dropdown>
+      <ui-dropdown>item6</ui-dropdown>
+      <ui-dropdown>item7</ui-dropdown>
+      <ui-dropdown>item8</ui-dropdown>
+      <ui-dropdown>item9</ui-dropdown>
+      <ui-dropdown>item10</ui-dropdown>
+      <ui-dropdown>item11</ui-dropdown>
+      <ui-dropdown>item12</ui-dropdown>
+    </ui-dropdown-meau>
+
+    <h2>With ng-repeat</h2>
+
+    <ui-dropdown-meau ex-placeholder="my dropdown" >
+      <ui-dropdown ex-text="item" ng-repeat="item in dropdown_items">{{ item }}</ui-dropdown>
+    </ui-dropdown-meau>
+
+    <h2>With ng-repeat and key/value objects</h2>
+
+    <ui-dropdown-meau ex-placeholder="my dropdown">
+      <ui-dropdown ex-text="title" ng-repeat="(title, value) in dropdown_key_value_items">{{ value }}</ui-dropdown>
+    </ui-dropdown-meau>
+
+
+  <script src="../../src/angular.js" type="text/javascript"></script>
+  <script src="../../src/angular-animate.js" type="text/javascript"></script>
+    <script src="../dropdown.js" type="text/javascript"></script>
+    <script src="controllers.js" type="text/javascript"></script>
+</body>
+</html>

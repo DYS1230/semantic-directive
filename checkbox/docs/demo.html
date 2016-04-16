@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html ng-app="checkBoxApp">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Semantic UI + Angular.JS</title>
+  <link href="../../src/semantic.css" rel="stylesheet" /> 
+</head>
+
+<body ng-controller="RootCtrl">
+  <ui-checkbox checked="false" ng-model="aa">Alex</ui-checkbox>
+  <br/>
+  <ui-checkbox checked="true" ng-model="bb">0xAX</ui-checkbox>
+  <br/>
+  <ui-checkbox ng-model="cc">User</ui-checkbox>
+  <br/>
+  <ui-checkbox disabled="true" ng-model="dd">User</ui-checkbox>
+
+
+  <script src="../../src/angular.js" type="text/javascript"></script>
+  <script src="../checkbox.js" type="text/javascript"></script>
+  <script src="controllers.js" type="text/javascript"></script>
+
+</body>
+
+</html>

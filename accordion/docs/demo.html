@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html ng-app="AccordionApp">
+<head>
+  <meta charset="utf-8" />
+  <title>Semantic UI + Angular.JS</title>
+  <link href="../../src/semantic.css" rel="stylesheet" /> 
+</head>
+<body ng-controller="RootCtrl">
+  <ui-accordion close="true">
+    <ui-accordion-group  title="First tab" open=true>
+      <p>Some text in first tab</p>
+    </ui-accordion-group> 
+    <ui-accordion-group title="Second tab">
+      <p>a text in second tab</p>
+          <ui-accordion>
+          <ui-accordion-group title="1 tab">
+            <p>11</p>
+            <ui-accordion-group title="1-1 tab">
+            <p>22</p>
+          </ui-accordion-group>
+          </ui-accordion-group>
+          <ui-accordion-group title="2 tab">
+            <p>..</p>
+          </ui-accordion-group>
+          <ui-accordion-group title="3 tab">
+            <p>wo shi di san ge</p>
+          </ui-accordion-group>
+    </ui-accordion-group> 
+    <ui-accordion-group title="1Second tab">
+      <p>a text in second tab</p>
+    </ui-accordion-group> 
+    <ui-accordion-group title="2Second tab">
+      <p>a text in second tab</p>
+    </ui-accordion-group> 
+  </ui-accordion>
+
+
+  <script src="../../src/angular.js" type="text/javascript"></script>
+  <script src="../../src/angular-animate.js" type="text/javascript"></script>
+  <script src="../../accordion/accordion.js" type="text/javascript"></script>
+  <script src="controllers.js" type="text/javascript"></script>
+
+</body>
+</html>
